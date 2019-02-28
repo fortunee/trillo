@@ -16,6 +16,12 @@ Grey dark 3: #999
 
 */
 
+:root {
+    --primary-color: #eb2f64;
+    --primary-color-light: #FF3366;
+    --primary-color-dark: #BA265D;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,4 +42,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--primary-color-light), var(--primary-color-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
 }
