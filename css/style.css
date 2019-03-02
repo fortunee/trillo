@@ -73,3 +73,16 @@ body {
 .hotel-view {
   background-color: orangered;
   flex: 1; }
+
+/**
+ * LOGO STYLES
+ */
+.logo {
+  height: 3.25rem; }
+
+/**
+ * SEARCH BOX STYLES
+ */
+/**
+ * USER NAV STYLES
+ */
