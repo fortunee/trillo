@@ -3,6 +3,7 @@
  */
 .logo {
     height: 3.25rem;
+    margin-left: 3rem;
 }
 
 /**
@@ -10,8 +11,24 @@
  */
  .search {
      background-color: greenyellow;
-     &__input {
+     flex: 0 0 40%;
 
+     &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--grey-color-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 9rem;
+        width: 90%;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--grey-color-light-3);
+        }
      }
 
      &__button {
