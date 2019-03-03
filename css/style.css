@@ -61,7 +61,10 @@ body {
 .header {
   height: 7rem;
   background-color: #ffffff;
-  border-bottom: var(--grey-color-light-2); }
+  border-bottom: var(--grey-color-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .content {
   display: flex; }
@@ -83,17 +86,20 @@ body {
 /**
  * SEARCH BOX STYLES
  */
-.search__icon {
-  height: 2rem;
-  width: 2rem; }
+.search {
+  background-color: greenyellow; }
+  .search__icon {
+    height: 2rem;
+    width: 2rem; }
 
 /**
  * USER NAV STYLES
  */
-.user-nav__icon {
-  height: 2.25rem;
-  width: 2.25rem; }
-
-.user-nav__profile-pic {
-  height: 3.75rem;
-  border-radius: 50%; }
+.user-nav {
+  background-color: orangered; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user-nav__profile-pic {
+    height: 3.75rem;
+    border-radius: 50%; }
