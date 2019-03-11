@@ -203,3 +203,41 @@
         display: block;
     }
 }
+
+/**
+ * OVERVIEW STYLES
+ */
+ .overview {
+    display: flex;
+
+    &__heading {
+
+    }
+
+    &__stars {
+        margin-right: auto;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.7rem;
+        height: 1.7rem;
+        fill: var(--primary-color)
+    }
+
+    &__location {
+        
+    }
+
+    &__rating {
+
+    }
+
+    &__rating-average {
+        
+    }
+
+    &__rating-count {
+        
+    }
+}
