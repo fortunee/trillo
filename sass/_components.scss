@@ -182,9 +182,62 @@
     }
  }
 
+ /**
+  * LEGAL TEXT STYLE
+  */
  .legal {
      font-size: 1.2rem;
      color: var(--grey-color-dark-4);
      text-align: center;
      padding: 2.5rem;
  }
+
+/**
+ * GALLERY STYLE
+ */
+.gallery {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+/**
+ * OVERVIEW STYLES
+ */
+ .overview {
+    display: flex;
+
+    &__heading {
+
+    }
+
+    &__stars {
+        margin-right: auto;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.7rem;
+        height: 1.7rem;
+        fill: var(--primary-color)
+    }
+
+    &__location {
+        
+    }
+
+    &__rating {
+
+    }
+
+    &__rating-average {
+        
+    }
+
+    &__rating-count {
+        
+    }
+}
