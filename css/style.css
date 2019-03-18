@@ -62,7 +62,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #ffffff;
-  border-bottom: var(--grey-color-light-2);
+  border-bottom: 1px solid var(--grey-color-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -231,7 +231,8 @@ body {
  * OVERVIEW STYLES
  */
 .overview {
-  display: flex; }
+  display: flex;
+  border-bottom: 1px solid var(--grey-color-light-2); }
   .overview__stars {
     margin-right: auto; }
   .overview__icon-star, .overview__icon-location {
