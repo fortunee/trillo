@@ -26,7 +26,8 @@ Grey dark 3: #999
   --grey-color-dark-1: #333;
   --grey-color-dark-2: #777;
   --grey-color-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3); }
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+  --line: 1px solid var(--grey-color-light-2); }
 
 * {
   margin: 0;
@@ -62,7 +63,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #ffffff;
-  border-bottom: 1px solid var(--grey-color-light-2);
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -82,13 +83,19 @@ body {
   height: 80rem; }
 
 .detail {
-  display: flex; }
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--grey-color-light-1);
+  border-bottom: var(--line); }
 
 .description {
-  background-color: greenyellow; }
+  background-color: greenyellow;
+  flex: 0 0 60%;
+  margin-right: 4.5rem; }
 
 .user-reviews {
-  background-color: orangered; }
+  background-color: orangered;
+  flex: 1; }
 
 /**
  * LOGO STYLES
@@ -242,7 +249,7 @@ body {
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--grey-color-light-2); }
+  border-bottom: var(--line); }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;

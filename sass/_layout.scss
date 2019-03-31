@@ -11,7 +11,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: #ffffff;
-    border-bottom: 1px solid var(--grey-color-light-2);
+    border-bottom: var(--line);
 
     display: flex;
     justify-content: space-between;
@@ -40,12 +40,18 @@
 
 .detail {
     display: flex;
+    padding: 4.5rem;
+    background-color: var(--grey-color-light-1);
+    border-bottom: var(--line);
 }
 
 .description {
     background-color: greenyellow;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
 }
 
 .user-reviews {
     background-color: orangered;
+    flex: 1;
 }
