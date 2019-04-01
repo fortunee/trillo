@@ -319,3 +319,16 @@ body {
   100% {
     transform: scale(1);
     box-shadow: none; } }
+
+/**
+ * PARAGRAPH
+ */
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+/**
+ * LIST
+ */
+/**
+ * RECOMMEND
+ */
