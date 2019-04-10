@@ -280,8 +280,17 @@
      cursor: pointer;
      transition: all .2s;
 
+     & span {
+         margin-left: .3rem;
+         transition: margin-left .2s;
+     }
+
      &:hover {
          color: var(--grey-color-dark-1);
+
+         span {
+             margin-left: .8rem;
+         }
      }
 
      &:focus {
@@ -390,7 +399,7 @@
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
-    margin-right: 3.5rem;
+    margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
 
