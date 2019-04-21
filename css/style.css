@@ -422,3 +422,15 @@ body {
     color: var(--grey-color-light-2);
     font-family: sans-serif;
     z-index: 1; }
+
+/**
+ * CTA SECTION
+ */
+.cta {
+  padding: 3.5rem;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
