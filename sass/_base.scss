@@ -36,9 +36,11 @@ Grey dark 3: #999
     --line: 1px solid var(--grey-color-light-2);
 
 }
+
 // BREAKPOINTS
 $bp-largest: 75em; // 1200px divided by 16px
 $bp-large: 68.75em; // 1100px divided by 16px
+$bp-medium: 56.25em; // 900px divided by 16px
 
 * {
     margin: 0;
