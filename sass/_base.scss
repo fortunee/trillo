@@ -38,6 +38,7 @@ Grey dark 3: #999
 }
 // BREAKPOINTS
 $bp-largest: 75em; // 1200px divided by 16px
+$bp-large: 68.75em; // 1100px divided by 16px
 
 * {
     margin: 0;
@@ -53,6 +54,10 @@ $bp-largest: 75em; // 1200px divided by 16px
 html {
     box-sizing: border-box;
     font-size: 62.5%; // Just so 1rem === 10px which is gotten by browser default 10px/16px === 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%; // 8px/16px === 0.5 (50%)
+    }
 }
 
 body {
