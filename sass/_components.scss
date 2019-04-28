@@ -222,10 +222,16 @@
   * LEGAL TEXT STYLE
   */
  .legal {
-     font-size: 1.2rem;
-     color: var(--grey-color-dark-4);
-     text-align: center;
-     padding: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--grey-color-dark-4);
+    text-align: center;
+    padding: 2.5rem;
+
+    &__link:link,
+    &__link:visited {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
 
     @media only screen and (max-width: $bp-medium)  {
         display: none;
@@ -406,13 +412,18 @@
         padding: .7rem;
 
         // Older browsers approach
-        // background-image: url(../img/chevron-thin-right.svg);
-        // background-size: cover;
+        background-image: url(../img/chevron-thin-right.svg);
+        background-size: cover;
 
         // Newer browsers approach with masks
-        background-color: var(--primary-color);
-        -webkit-mask-image: url(../img/chevron-thin-right.svg);
-        -webkit-mask-size: cover;
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: var(--primary-color);
+            -webkit-mask-image: url(../img/chevron-thin-right.svg);
+            -webkit-mask-size: cover;
+            mask-image: url(../img/chevron-thin-right.svg);
+            mask-size: cover;
+            background-image: none;
+        }
 
     }
 }
