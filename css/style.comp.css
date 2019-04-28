@@ -298,6 +298,9 @@ body {
   color: var(--grey-color-dark-4);
   text-align: center;
   padding: 2.5rem; }
+  .legal__link:link, .legal__link:visited {
+    color: var(--primary-color);
+    text-decoration: none; }
   @media only screen and (max-width: 56.25em) {
     .legal {
       display: none; } }

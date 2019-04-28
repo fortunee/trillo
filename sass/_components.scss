@@ -222,10 +222,16 @@
   * LEGAL TEXT STYLE
   */
  .legal {
-     font-size: 1.2rem;
-     color: var(--grey-color-dark-4);
-     text-align: center;
-     padding: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--grey-color-dark-4);
+    text-align: center;
+    padding: 2.5rem;
+
+    &__link:link,
+    &__link:visited {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
 
     @media only screen and (max-width: $bp-medium)  {
         display: none;
