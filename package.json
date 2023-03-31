@@ -14,9 +14,9 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^10.4.14",
     "node-sass": "^7.0.3",
     "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^10.1.0"
   }
 }
